@@ -1,0 +1,9 @@
+vi /etc/systemd/system/servicename.service
+
+[Unit]
+Description= run script every second
+[Service]
+#User=dxuser
+ExecStart=/bin/bash /path/to/script.sh
+Restart=always
+RestartSec=1  #time interval for execurtion
