@@ -7,3 +7,13 @@ Description= run script every second
 ExecStart=/bin/bash /path/to/script.sh
 Restart=always
 RestartSec=1  #time interval for execurtion
+
+==
+sudo systemctl daemon-reload
+
+sudo systemctl enable servicename
+
+sudo systemctl start servicename
+
+sudo systemctl status servicename
+==
